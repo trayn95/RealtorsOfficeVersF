@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище RealtorModelContainer" CdmEntityContainer="RealtorEntities">
+    <EntitySetMapping Name="Client">
+      <EntityTypeMapping TypeName="RealtorModel.Client">
+        <MappingFragment StoreEntitySet="Client">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Manager">
+      <EntityTypeMapping TypeName="RealtorModel.Manager">
+        <MappingFragment StoreEntitySet="Manager">
+          <ScalarProperty Name="rol" ColumnName="rol" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Realtor">
+      <EntityTypeMapping TypeName="RealtorModel.Realtor">
+        <MappingFragment StoreEntitySet="Realtor">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="Comission" ColumnName="Comission" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
